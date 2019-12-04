@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>JQVMap - USA Map</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <link href="../dist/jqvmap.css" media="screen" rel="stylesheet" type="text/css"/>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../dist/jquery.vmap.js"></script>
+    <script type="text/javascript" src="../dist/maps/jquery.vmap.usabid.js" charset="utf-8"></script>
+
+    <script>
+      jQuery(document).ready(function () {
+        jQuery('#vmap').vectorMap({
+          map: 'usa_en',
+          enableZoom: true,
+          showTooltip: true,
+          selectedColor: null,
+          hoverColor: null,
+          colors: {
+al:"#FDDF86"
+,ak:"#FDE785"
+,az:"#FCE684"
+,ar:"#FCCA7D"
+,ca:"#FD9575"
+,co:"#FADE7D"
+,ct:"#FECE7B"
+,de:"#FACB79"
+,fl:"#F36D70"
+,ga:"#FBE87C"
+,hi:"#FDE37E"
+,id:"#FEC872"
+,il:"#FBDF81"
+,in:"#FAB275"
+,ia:"#FBE881"
+,ks:"#FEEA84"
+,ky:"#DDE385"
+,la:"#FD9575"
+,me:"#FDE079"
+,md:"#FFD277"
+,ma:"#FF9D79"
+,mi:"#FFD176"
+,mn:"#FFDF7D"
+,ms:"#FDEB81"
+,mo:"#F9E98A"
+,mt:"#FEE979"
+,ne:"#FFE281"
+,nv:"#FFDD88"
+,nh:"#FFE080"
+,nj:"#F9E38C"
+,nm:"#F5E97A"
+,ny:"#EFE687"
+,nc:"#FE8C74"
+,nd:"#F0E983"
+,oh:"#F7A276"
+,ok:"#FFD879"
+,or:"#FCEE7B"
+,pa:"#E0E581"
+,ri:"#F6EB79"
+,sc:"#FDD473"
+,sd:"#FEE883"
+,tn:"#FD9779"
+,tx:"#F36D70"
+,ut:"#FDE58B"
+,vt:"#FDDB82"
+,va:"#FBAB77"
+,wa:"#F3EE7B"
+,wv:"#FDE388"
+,wi:"#F6B880"
+,wy:"#FBD27A"          
+         },
+          onRegionClick: function(event, code, region){
+            event.preventDefault();
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="vmap" style="width: 600px; height: 400px;"></div>
+  </body>
+</html>

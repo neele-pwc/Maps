@@ -1,0 +1,1 @@
+var electionColors = {"MO":"#f77","WA":"#f77"};
